@@ -29,8 +29,6 @@ public class SavingsAccount extends Account{
 
     @Override
     public double calculateInterest() {
-        double interestGain  = 0;
-        interestGain = getAccountBalance() * getInterestRate() / 100;
-        return interestGain;
+        return getAccountBalance() * getInterestRate() / 100;
     }
 }

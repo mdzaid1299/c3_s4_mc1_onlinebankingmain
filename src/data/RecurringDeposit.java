@@ -47,10 +47,6 @@ public class RecurringDeposit extends Account{
     }
 
     public double calculateInterest(){
-        double intersetGain = 0;
-
-
-        intersetGain = (getMonthly_investedAmount() * getTenure() *  getRoi() )/ 100;
-        return  intersetGain;
+        return  (getMonthly_investedAmount() * getTenure() *  getRoi() )/ 100;
     }
 }
